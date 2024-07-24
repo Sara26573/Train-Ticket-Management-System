@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="676.0" prefWidth="1510.0" style="-fx-background-color: #Fff8e5;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CRUDklienta">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="38.0" prefHeight="274.0" prefWidth="1490.0" styleClass="bg-white" stylesheets="@../../../TravelAgency/src/application/application.css">
+         <children>
+            <TableView fx:id="table" layoutX="17.0" layoutY="22.0" onMouseClicked="#perditeso" prefHeight="238.0" prefWidth="1456.0" stylesheets="@application.css">
+              <columns>
+                <TableColumn fx:id="emer" prefWidth="63.999966621398926" text="Emer" />
+                <TableColumn fx:id="mbiemer" prefWidth="82.40003967285156" text="Mbiemer" />
+                  <TableColumn fx:id="NumerTelefoni" prefWidth="136.8000030517578" text="Nr Telefoni/Email" />
+                  <TableColumn fx:id="NumerKrediti" prefWidth="111.20001220703125" text="Numer Krediti" />
+                  <TableColumn fx:id="DataSkadences" prefWidth="124.79998779296875" text="Data e Skadences" />
+                  <TableColumn fx:id="cvv" minWidth="0.0" prefWidth="64.0" text="CVV" />
+                  <TableColumn fx:id="destiinacioni" minWidth="0.0" prefWidth="101.60003662109375" text="Destinacioni" />
+                  <TableColumn fx:id="vende" prefWidth="66.39996337890625" text="Vende" />
+                  <TableColumn fx:id="cmimi" prefWidth="124.79998779296875" text="Cmimi" />
+                  <TableColumn fx:id="dataRezervimit" prefWidth="159.2000732421875" text="Data e Rezervimit" />
+                  <TableColumn fx:id="dataNisjes" prefWidth="157.60003662109375" text="Data e Nisjes" />
+                  <TableColumn fx:id="burimi" prefWidth="124.800048828125" text="Burimi" />
+                  <TableColumn fx:id="NumerId" prefWidth="140.0001220703125" text="Numer Id" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="324.0" prefHeight="302.0" prefWidth="1482.0" styleClass="bg-white" stylesheets="@../../../TravelAgency/src/application/application.css">
+         <children>
+            <Label layoutX="30.0" layoutY="14.0" prefHeight="44.0" prefWidth="76.0" text="Emer" textFill="#762d00">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emertextfield" layoutX="30.0" layoutY="57.0" prefHeight="26.0" prefWidth="206.0" />
+            <TextField fx:id="mbiemertextfield" layoutX="30.0" layoutY="115.0" prefHeight="26.0" prefWidth="206.0" />
+            <Label layoutX="29.0" layoutY="80.0" prefHeight="26.0" prefWidth="122.0" text="Mbiemer" textFill="#762d00">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="NrTelefoniEmailtextfield" layoutX="30.0" layoutY="173.0" prefHeight="26.0" prefWidth="206.0" />
+            <Label layoutX="29.0" layoutY="138.0" prefHeight="38.0" prefWidth="284.0" text="Numer Telefoni/Email" textFill="#762d00">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="NumerKreditiTextfield" layoutX="30.0" layoutY="235.0" prefHeight="26.0" prefWidth="206.0" />
+            <Label layoutX="29.0" layoutY="202.0" prefHeight="38.0" prefWidth="284.0" text="Numer Krediti/Debiti" textFill="#762d00">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="DataSkadencesTextfield" layoutX="322.0" layoutY="57.0" prefHeight="26.0" prefWidth="206.0" />
+            <Label layoutX="322.0" layoutY="17.0" prefHeight="38.0" prefWidth="226.0" text="Data e Skadences" textFill="#762d00">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cvvTextfield" layoutX="322.0" layoutY="116.0" prefHeight="26.0" prefWidth="206.0" />
+            <Label layoutX="322.0" layoutY="83.0" prefHeight="38.0" prefWidth="226.0" text="CVV" textFill="#762d00">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="322.0" layoutY="138.0" prefHeight="38.0" prefWidth="226.0" text="Destinacioni" textFill="#762d00">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="destinacioniTextfield" layoutX="322.0" layoutY="173.0" prefHeight="26.0" prefWidth="206.0" />
+            <TextField fx:id="vendetextfield" layoutX="322.0" layoutY="235.0" prefHeight="26.0" prefWidth="206.0" />
+            <Label layoutX="322.0" layoutY="203.0" prefHeight="35.0" prefWidth="226.0" text="Vende" textFill="#762d00">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cmimitextfield" layoutX="605.0" layoutY="57.0" prefHeight="26.0" prefWidth="206.0" />
+            <Label layoutX="605.0" layoutY="18.0" prefHeight="35.0" prefWidth="226.0" text="Cmimi" textFill="#762d00">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dataRezervimitTextField" layoutX="605.0" layoutY="117.0" prefHeight="26.0" prefWidth="206.0" />
+            <Label layoutX="600.0" layoutY="80.0" prefHeight="44.0" prefWidth="226.0" text="Data e Rezervimit" textFill="#762d00">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="DataNisjesTextField" layoutX="605.0" layoutY="173.0" prefHeight="26.0" prefWidth="206.0" />
+            <Label layoutX="600.0" layoutY="139.0" prefHeight="26.0" prefWidth="226.0" text="Data e Nisjes" textFill="#762d00">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="burimitextfield" layoutX="605.0" layoutY="235.0" prefHeight="26.0" prefWidth="206.0" />
+            <Label layoutX="605.0" layoutY="203.0" prefHeight="35.0" prefWidth="226.0" text="Burimi" textFill="#762d00">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="numerIdTextfield" layoutX="886.0" layoutY="57.0" prefHeight="26.0" prefWidth="206.0" />
+            <Label layoutX="884.0" layoutY="18.0" prefHeight="26.0" prefWidth="226.0" text="Numer ID" textFill="#762d00">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="1163.0" layoutY="55.0" mnemonicParsing="false" onAction="#fshi" prefHeight="56.0" prefWidth="196.0" styleClass="button121" stylesheets="@application.css" text="Fshi">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="id" layoutX="847.0" layoutY="256.0" opacity="0.0" prefHeight="44.0" prefWidth="214.0" text="Label" />
+            <Button layoutX="1163.0" layoutY="207.0" mnemonicParsing="false" onAction="#modifiko" prefHeight="56.0" prefWidth="196.0" styleClass="button121" stylesheets="@application.css" text="Modifiko">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="1163.0" layoutY="130.0" mnemonicParsing="false" onAction="#shto" prefHeight="56.0" prefWidth="196.0" styleClass="button121" stylesheets="@application.css" text="Shto">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="1369.0" layoutY="54.0" mnemonicParsing="false" onAction="#kthehu" prefHeight="208.0" prefWidth="90.0" styleClass="kthehuButton" stylesheets="@application.css" text="Kthehu">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="922.0" layoutY="83.0" prefHeight="56.0" prefWidth="238.0" style="-fx-font-family: serif;" text="Client">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="884.0" layoutY="123.0" prefHeight="56.0" prefWidth="226.0" style="-fx-font-family: serif;" text="Managment">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="85.0" fitWidth="90.0" layoutX="934.0" layoutY="181.0">
+               <image>
+                  <Image url="@../../../../Desktop/ProjektMedjom/WelcomeLogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutY="-1.0" prefHeight="18.0" prefWidth="1510.0" style="-fx-background-color: #6a0d0d;" />
+      <Label layoutY="647.0" prefHeight="30.0" prefWidth="1510.0" style="-fx-background-color: #6a0d0d;" />
+   </children>
+</AnchorPane>
